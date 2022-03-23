@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso Basico de Vue.js | Platzi</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app" v-bind:style="{ background: '#' + color }">
+
+    <coin-detail
+      @change-color="updateColor"
+      :coin="btc">
+      <template v-slot:text>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eum, hic ipsa ipsam nisi quibusdam repellat suscipit? Adipisci consectetur consequuntur dolorum eveniet illo labore odit possimus, quae quasi reiciendis repellendus?</p>
+      </template>
+      <template v-slot:link>
+        <a href="https://gtucc.com/locations/">Locations!</a>
+      </template>
+    </coin-detail>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,16 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <px-header />
+  <router-view class="container px-5 sm:px-20 py-20" />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import PxHeader from "@/components/PxHeader";
 
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
+  // eslint-disable-next-line vue/no-unused-components
+  components: { PxHeader },
 };
 </script>
 
